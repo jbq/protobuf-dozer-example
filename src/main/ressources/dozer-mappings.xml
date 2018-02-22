@@ -26,8 +26,21 @@
 
 
     <mapping wildcard="true" >
-        <class-a>org.powertac.common.Broker</class-a>
+        <class-a >org.powertac.common.Broker</class-a>
         <class-b>de.pascalwhoop.powertac.grpc.PBBroker</class-b>
+        <field>
+            <a>username</a>
+            <b is-accessible="true">username_</b>
+        </field>
+    </mapping>
+    <mapping wildcard="true" >
+        <class-a >org.powertac.common.Broker</class-a>
+        <class-b>de.pascalbrokmeier.TestBroker</class-b>
+        <!--Without this, a field cannot be accessed if it has no setter. not cool-->
+        <field>
+            <a>password</a>
+            <b is-accessible="true">password</b>
+        </field>
     </mapping>
 
     <mapping>
