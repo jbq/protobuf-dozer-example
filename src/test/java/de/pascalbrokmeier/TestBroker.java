@@ -20,5 +20,9 @@ public class TestBroker {
     public String getPassword() {
         return password;
     }
+
+    public String getKey() {
+        return key;
+    }
 }
 

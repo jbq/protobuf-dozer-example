@@ -23,4 +23,8 @@ public class Broker {
     public String getPassword() {
         return password;
     }
+
+    public String getKey() {
+        return key;
+    }
 }
