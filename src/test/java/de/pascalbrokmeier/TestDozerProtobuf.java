@@ -26,4 +26,12 @@ public class TestDozerProtobuf
 
     }
 
+    @Test
+     public void convertGenericWithoutSetter() {
+        Broker b = new Broker("Chicken", "eggs", "food", "farm");
+        TestBroker f = conv.convertGeneric(b, TestBroker.class);
+        assertEquals(b.getPassword(), f.getPassword());
+
+    }
+
 }

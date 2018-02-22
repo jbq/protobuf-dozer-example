@@ -20,4 +20,7 @@ public class Broker {
         return username;
     }
 
+    public String getPassword() {
+        return password;
+    }
 }
