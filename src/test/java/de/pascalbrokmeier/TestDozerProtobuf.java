@@ -1,20 +1,15 @@
 package de.pascalbrokmeier;
 
-import de.pascalwhoop.powertac.grpc.GrpcMessages;
 import de.pascalwhoop.powertac.grpc.PBBroker;
-import junit.framework.TestCase;
 import org.junit.Test;
 import org.powertac.common.Broker;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Unit test for simple App.
- */
 public class TestDozerProtobuf
 
 {
-    GRPCTypeConverter conv = new GRPCTypeConverter();
+    private GRPCTypeConverter conv = new GRPCTypeConverter();
 
     @Test
     public void convertProtobuf() {

@@ -26,7 +26,6 @@ public class GRPCTypeConverter {
 
     private Mapper mapper;
 
-
     public GRPCTypeConverter() {
         mapper = DozerBeanMapperBuilder
                 .create()
@@ -36,10 +35,6 @@ public class GRPCTypeConverter {
 
     public <T> T convertGeneric(Object source, Class<T> dc) {
         return mapper.map(source, dc);
-    }
-
-    public void convertGeneric(Object source, Object dest) {
-        mapper.map(source, dest);
     }
 
 

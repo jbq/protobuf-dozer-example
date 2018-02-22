@@ -3,17 +3,17 @@ option java_package = "de.pascalwhoop.powertac.grpc";
 option java_multiple_files = true;
 
 message PBBroker {
-  int64 id                                        = 1 ;
-  string username                                 = 2 ;
-  string password                                 = 3 ;
-  string key                                      = 4 ;
-  string queueName                                = 5 ;
-  bool enabled                                    = 6 ;
-  bool local                                      = 7 ;
-  int64 idPrefix                                  = 8 ;
-  bool wholesale                                  = 9 ;
-  double cash                                     = 10 ;
-  map<int32, double> mktPositions                 = 11 ;
+    int64 id = 1;
+    string username = 2;
+    string password = 3;
+    string key = 4;
+    string queueName = 5;
+    bool enabled = 6;
+    bool local = 7;
+    int64 idPrefix = 8;
+    bool wholesale = 9;
+    double cash = 10;
+    map<int32, double> mktPositions = 11;
 }
 
 
