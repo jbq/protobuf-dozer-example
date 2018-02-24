@@ -24,15 +24,11 @@
         <wildcard>true</wildcard>
     </configuration>
 
-
     <mapping wildcard="true" >
         <class-a >org.powertac.common.Broker</class-a>
         <class-b>de.pascalwhoop.powertac.grpc.PBBroker</class-b>
-        <field>
-            <a>username</a>
-            <b is-accessible="true">username_</b>
-        </field>
     </mapping>
+
     <mapping wildcard="true" >
         <class-a >org.powertac.common.Broker</class-a>
         <class-b>de.pascalbrokmeier.TestBroker</class-b>
